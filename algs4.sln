@@ -1,0 +1,67 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.30501.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Algs4", "algs4\Algs4.csproj", "{0CA39C3D-6165-4D5E-83CB-B874EBCAA61F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Algs4UnitTests", "algs4UnitTests\Algs4UnitTests.csproj", "{3E12D272-F2B8-4C25-94CF-F1DD170AB4FB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Stdlib", "stdlib\Stdlib.csproj", "{9FFD0C6B-936D-46F9-941E-E688C99A647F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StdlibUnitTests", "stdlibUnitTests\StdlibUnitTests.csproj", "{9E1288CB-7A63-4F2C-BEF8-2A703CB706DE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Algs4FunctionalTests", "Algs4FunctionalTests\Algs4FunctionalTests.csproj", "{A05B2639-5916-42AB-BEE1-61329EFBEBAC}"
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 6
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://eusebio.visualstudio.com/defaultcollection
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = algs4\\algs4.csproj
+		SccProjectName1 = algs4
+		SccLocalPath1 = algs4
+		SccProjectUniqueName2 = algs4UnitTests\\algs4UnitTests.csproj
+		SccProjectName2 = algs4UnitTests
+		SccLocalPath2 = algs4UnitTests
+		SccProjectUniqueName3 = stdlib\\stdlib.csproj
+		SccProjectName3 = stdlib
+		SccLocalPath3 = stdlib
+		SccProjectUniqueName4 = stdlibUnitTests\\stdlibUnitTests.csproj
+		SccProjectName4 = stdlibUnitTests
+		SccLocalPath4 = stdlibUnitTests
+		SccProjectUniqueName5 = Algs4FunctionalTests\\Algs4FunctionalTests.csproj
+		SccProjectName5 = Algs4FunctionalTests
+		SccLocalPath5 = Algs4FunctionalTests
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0CA39C3D-6165-4D5E-83CB-B874EBCAA61F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0CA39C3D-6165-4D5E-83CB-B874EBCAA61F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0CA39C3D-6165-4D5E-83CB-B874EBCAA61F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0CA39C3D-6165-4D5E-83CB-B874EBCAA61F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3E12D272-F2B8-4C25-94CF-F1DD170AB4FB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3E12D272-F2B8-4C25-94CF-F1DD170AB4FB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3E12D272-F2B8-4C25-94CF-F1DD170AB4FB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3E12D272-F2B8-4C25-94CF-F1DD170AB4FB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9FFD0C6B-936D-46F9-941E-E688C99A647F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9FFD0C6B-936D-46F9-941E-E688C99A647F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9FFD0C6B-936D-46F9-941E-E688C99A647F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9FFD0C6B-936D-46F9-941E-E688C99A647F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9E1288CB-7A63-4F2C-BEF8-2A703CB706DE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9E1288CB-7A63-4F2C-BEF8-2A703CB706DE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9E1288CB-7A63-4F2C-BEF8-2A703CB706DE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9E1288CB-7A63-4F2C-BEF8-2A703CB706DE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A05B2639-5916-42AB-BEE1-61329EFBEBAC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A05B2639-5916-42AB-BEE1-61329EFBEBAC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A05B2639-5916-42AB-BEE1-61329EFBEBAC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A05B2639-5916-42AB-BEE1-61329EFBEBAC}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
