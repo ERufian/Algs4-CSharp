@@ -56,7 +56,12 @@
   </Choose>
   <ItemGroup>
     <Compile Include="BinarySearchUnitTests.cs" />
+    <Compile Include="CommonUFUnitTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="QuickFindUFUnitTests.cs" />
+    <Compile Include="QuickUnionUFUnitTests.cs" />
+    <Compile Include="UFUnitTests.cs" />
+    <Compile Include="WeightedQuickUnionUFUnitTests.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\algs4\Algs4.csproj">
@@ -73,6 +78,11 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
     <None Include="tinyW.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="tinyUF.txt">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
   </ItemGroup>

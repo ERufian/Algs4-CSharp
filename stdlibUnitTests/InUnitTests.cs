@@ -22,7 +22,7 @@ namespace StdlibUnitTests
       /// URL location for the test file.
       /// </summary>
       private const string UrlName = "http://introcs.cs.princeton.edu/stdlib/InTest.txt";
-      
+
       /// <summary>
       /// Expected text in the Test file (local or URL).
       /// </summary>
@@ -37,7 +37,7 @@ namespace StdlibUnitTests
       /// Expected text as individual words (whitespace excluded).
       /// </summary>
       private static readonly string[] InTestWords = InTest.Split("\n ".ToCharArray(), StringSplitOptions.RemoveEmptyEntries);
-      
+
       /// <summary>
       /// Expected text as individual characters (whitespace and line separators included).
       /// </summary>
@@ -98,19 +98,19 @@ namespace StdlibUnitTests
       [TestMethod]
       public void ReadLineFromCurrentDirectory()
       {
-            using (In inObject = new In("./InTest.txt"))
+         using (In inObject = new In("./InTest.txt"))
+         {
+            while (!inObject.IsEmpty())
             {
+               int expectedIndex = 0;
                while (!inObject.IsEmpty())
                {
-                  int expectedIndex = 0;
-                  while (!inObject.IsEmpty())
-                  {
-                     string s = inObject.ReadLine();
-                     Assert.IsTrue(expectedIndex < InUnitTests.InTestLines.Length);
-                     Assert.AreEqual(InUnitTests.InTestLines[expectedIndex++], s);
-                  }
+                  string s = inObject.ReadLine();
+                  Assert.IsTrue(expectedIndex < InUnitTests.InTestLines.Length);
+                  Assert.AreEqual(InUnitTests.InTestLines[expectedIndex++], s);
                }
             }
+         }
       }
 
       /// <summary>
@@ -153,25 +153,25 @@ namespace StdlibUnitTests
             }
          }
       }
-      
+
       /// <summary>
       /// Read one line at a time from absolute Windows path.
       /// </summary>
       [TestMethod]
       public void ReadLineAbsoluteWindowsPath()
       {
-            string currentDirectory = Directory.GetCurrentDirectory();
-            string fullPath = Path.Combine(currentDirectory, "InTest.txt");
-            using (In inObject = new In(fullPath))
+         string currentDirectory = Directory.GetCurrentDirectory();
+         string fullPath = Path.Combine(currentDirectory, "InTest.txt");
+         using (In inObject = new In(fullPath))
+         {
+            int expectedIndex = 0;
+            while (!inObject.IsEmpty())
             {
-               int expectedIndex = 0;
-               while (!inObject.IsEmpty())
-               {
-                  string s = inObject.ReadLine();
-                  Assert.IsTrue(expectedIndex < InUnitTests.InTestLines.Length);
-                  Assert.AreEqual(InUnitTests.InTestLines[expectedIndex++], s);
-               }
+               string s = inObject.ReadLine();
+               Assert.IsTrue(expectedIndex < InUnitTests.InTestLines.Length);
+               Assert.AreEqual(InUnitTests.InTestLines[expectedIndex++], s);
             }
          }
+      }
    }
 }

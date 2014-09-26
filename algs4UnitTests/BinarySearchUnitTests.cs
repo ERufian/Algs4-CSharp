@@ -20,6 +20,7 @@ namespace Algs4UnitTests
       /// <summary>
       /// Perform a binary search on a small text file.
       /// </summary>
+      [TestCategory("Unit")]
       [TestMethod]
       public void BinarySearchTiny()
       {

@@ -24,6 +24,7 @@ namespace Algs4FunctionalTests
       /// This test takes a long time (a full minute on a fast machine)
       /// that is why it shouldn't be a unit test.
       /// </remarks>
+      [TestCategory("Functional")]
       [TestMethod]
       public void BinarySearchLarge()
       {

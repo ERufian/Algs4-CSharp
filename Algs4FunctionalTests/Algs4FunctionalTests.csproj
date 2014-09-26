@@ -56,7 +56,12 @@
   </Choose>
   <ItemGroup>
     <Compile Include="BinarySearchFunctionalTests.cs" />
+    <Compile Include="CommonUFFunctionalTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="QuickFindUFFunctionalTests.cs" />
+    <Compile Include="QuickUnionUFFunctionalTests.cs" />
+    <Compile Include="UFFunctionalTests.cs" />
+    <Compile Include="WeightedQuickUnionUFFunctionalTests.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\algs4\Algs4.csproj">
@@ -75,6 +80,14 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="largeW.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="largeUF.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="mediumUF.txt">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
   </ItemGroup>
