@@ -43,3 +43,7 @@ using System.Runtime.InteropServices;
 
 // This assembly is CLS Compliant
 [assembly: CLSCompliant(true)]
+
+// Provide access to internal test hooks
+[assembly: InternalsVisibleTo("Algs4FunctionalTests")]
+[assembly: InternalsVisibleTo("Algs4UnitTests")]
