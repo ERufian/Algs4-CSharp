@@ -1,0 +1,70 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Algs4-csharp by ERufian</title>
+
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+    <script src="javascripts/scale.fix.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1 class="header">Algs4-csharp</h1>
+        <p class="header">C# implementation of the class libraries for the book Algorithms 4th Edition by Robert Sedgewick and Kevin Wayne.</p>
+
+        <ul>
+          <li class="download"><a class="buttons" href="https://github.com/ERufian/Algs4-CSharp/zipball/master">Download ZIP</a></li>
+          <li class="download"><a class="buttons" href="https://github.com/ERufian/Algs4-CSharp/tarball/master">Download TAR</a></li>
+          <li><a class="buttons github" href="https://github.com/ERufian/Algs4-CSharp">View On GitHub</a></li>
+        </ul>
+
+        <p class="header">This project is maintained by <a class="header name" href="https://github.com/ERufian">ERufian</a></p>
+
+
+      </header>
+      <section>
+        <p>The book <em>Algorithms 4th Edition</em> contains Java implementations for many fundamental algorithms "<em>the 50 algorithms that every programmer should know</em>". The authors created a website, <a href="http://algs4.cs.princeton.edu/code/">http://algs4.cs.princeton.edu/code/</a> where all the code for the book is published as a class library <em>algs4</em> (including additional code that was omitted from the book itself for brevity reasons). </p>
+
+<p>Personally I prefer using C# so I have decided to re-implement algs4 in C# (some reasons I like C# is because it has been evolving from an original "very Java-like" object oriented language into a very flexible multi-paradigm language, and also because I like the tools in Visual Studio better than the equivalent tools for Java)</p>
+
+<p>I am trying to preserve the original APIs with minimal changes, extending them in some cases. If there is java code that uses the original algs4 I want it to be easy to port to C# using my re-implementation. On the other hand I use static code and style checking extensively (fxcop, stylecop and similar tools) and my code follows C# style rules (e.g., in terms of capitalization). An additional porting effort will be required, it will not be a drop-in replacement.</p>
+
+<p>The original algs4 mixes executable clients with the libraries themselves. I have separated the client code into test projects. Initially I'm expecting this to provide some degree of Unit testing. Eventually (after I get to implement the entire algs4 library) I may re-visit the Unit Tests to make them more exhaustive (and "real unit tests")</p>
+
+<p>Sedgewick &amp; Wayne also wrote the book <em>Introduction to Programming in Java</em> and an associated class library <em>stdlib</em> that they use in the algs4 code. I will re-implement some portions of stdlib as I need but I do not expect it to be complete, and my target quality level for stdlib is that it is "good enough" (e.g., for I/O functions I will not try to make it solid to deal with the many types of failure that can happen)</p>
+
+<p>In terms of licensing, the original algs4 is released as GPLv3. In the Q&amp;A section of the original code it says:</p>
+
+<blockquote>
+<p>Our libraries stdlib.jar and algs4.jar are released under the GNU General Public License, version 3 (GPLv3). If you wish to license the code under different terms, please contact our publisher to discuss. </p>
+</blockquote>
+
+<p>My re-implementation is also released under the same terms. Personally I would have chosen a less restrictive licensing. If you can get the original owners of algs4 to agree to different terms, please let me know and I'll release my re-implementation with a less restrictive license</p>
+
+<p>If you'd like to contact me regarding this code, please email algs4 (hyphen) csharp (dot) nospam (at) rufian (dot) zilbermann (dot) org</p>
+      </section>
+      <footer>
+        <p><small>Hosted on <a href="http://pages.github.com">GitHub Pages</a> using the Dinky theme</small></p>
+      </footer>
+    </div>
+    <!--[if !IE]><script>fixScale(document);</script><![endif]-->
+		          <script type="text/javascript">
+            var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+            document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+          </script>
+          <script type="text/javascript">
+            try {
+              var pageTracker = _gat._getTracker("UA-55191992-1");
+            pageTracker._trackPageview();
+            } catch(err) {}
+          </script>
+
+  </body>
+</html>
