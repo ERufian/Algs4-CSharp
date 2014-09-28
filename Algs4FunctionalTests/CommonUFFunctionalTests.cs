@@ -21,7 +21,7 @@ namespace Algs4FunctionalTests
       /// <param name="streamName">The name for the input stream.</param>
       /// <param name="unionFind">The union find to be tested.</param>
       /// <returns>The Union Find structure.</returns>
-      public static IUnionFind QuickFindUnionFindCommon(string streamName, IUnionFind unionFind)
+      public static IUnionFind UnionFindCommon(string streamName, IUnionFind unionFind)
       {
          if (null == streamName)
          {

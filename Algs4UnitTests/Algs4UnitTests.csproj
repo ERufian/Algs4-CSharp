@@ -56,11 +56,17 @@
   </Choose>
   <ItemGroup>
     <Compile Include="BinarySearchUnitTests.cs" />
+    <Compile Include="CommonSortUnitTests.cs" />
     <Compile Include="CommonUFUnitTests.cs" />
+    <Compile Include="GlobalSuppressions.cs" />
+    <Compile Include="InsertionUnitTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="QuickFindUFUnitTests.cs" />
     <Compile Include="QuickUnionUFUnitTests.cs" />
+    <Compile Include="SelectionUnitTests.cs" />
     <Compile Include="UFUnitTests.cs" />
+    <Compile Include="InsertionXUnitTests.cs" />
+    <Compile Include="ShellUnitTests.cs" />
     <Compile Include="WeightedQuickUnionUFUnitTests.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -83,6 +89,16 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="tinyUF.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="tiny.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="words3.txt">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
   </ItemGroup>

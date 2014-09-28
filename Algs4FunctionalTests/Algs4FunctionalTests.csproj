@@ -57,6 +57,7 @@
   <ItemGroup>
     <Compile Include="BinarySearchFunctionalTests.cs" />
     <Compile Include="CommonUFFunctionalTests.cs" />
+    <Compile Include="GlobalSuppressions.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="QuickFindUFFunctionalTests.cs" />
     <Compile Include="QuickUnionUFFunctionalTests.cs" />

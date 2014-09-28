@@ -24,7 +24,7 @@ namespace Algs4FunctionalTests
       public void QuickUnionUnionFindMedium()
       {
          IUnionFind unionFind = new UF();
-         CommonUFFunctionalTests.QuickFindUnionFindCommon("MediumUF.txt", unionFind);
+         CommonUFFunctionalTests.UnionFindCommon("MediumUF.txt", unionFind);
          Assert.AreEqual(3, unionFind.Count);
       }
 
@@ -32,11 +32,12 @@ namespace Algs4FunctionalTests
       /// Perform a Quick Find on a large text file.
       /// </summary>
       [TestCategory("Functional")]
-      //// [TestMethod] Suppressed, this test is excessively slow
+      [TestMethod]
+      [Ignore]
       public void QuickUnionUnionFindLarge()
       {
          IUnionFind unionFind = new UF();
-         CommonUFFunctionalTests.QuickFindUnionFindCommon("LargeUF.txt", unionFind);
+         CommonUFFunctionalTests.UnionFindCommon("LargeUF.txt", unionFind);
          Assert.AreEqual(6, unionFind.Count);
       }
    }

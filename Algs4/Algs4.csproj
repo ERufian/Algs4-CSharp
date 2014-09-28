@@ -45,6 +45,13 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BinarySearch.cs" />
+    <Compile Include="GlobalSuppressions.cs" />
+    <Compile Include="Insertion.cs" />
+    <Compile Include="InsertionX.cs" />
+    <Compile Include="ISortingAlgorithm.cs" />
+    <Compile Include="Selection.cs" />
+    <Compile Include="Shell.cs" />
+    <Compile Include="SortingCommon.cs" />
     <Compile Include="IUnionFind.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="QuickFindUF.cs" />

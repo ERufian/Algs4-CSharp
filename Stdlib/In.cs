@@ -379,7 +379,6 @@ namespace Stdlib
       /// <exception cref="ArgumentNullException">The next input string is null.</exception>
       /// <exception cref="FormatException">The next input string not an integer number.</exception>
       /// <exception cref="OverflowException">The next input string is a number larger than an int.</exception>
-      [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Naming", "CA1720:IdentifiersShouldNotContainTypeNames", Justification = "The return type must be specified in the method name")]
       public int ReadInt()
       {
          return int.Parse(this.ReadString(), this.locale);
@@ -404,7 +403,6 @@ namespace Stdlib
       /// <exception cref="ArgumentNullException">The next input string is null.</exception>
       /// <exception cref="FormatException">The next input string not a float number.</exception>
       /// <exception cref="OverflowException">The next input string is a number larger than a float.</exception>
-      [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Naming", "CA1720:IdentifiersShouldNotContainTypeNames", Justification = "The return type must be specified in the method name")]
       public float ReadFloat()
       {
          return float.Parse(this.ReadString(), this.locale);
@@ -417,7 +415,6 @@ namespace Stdlib
       /// <exception cref="ArgumentNullException">The next input string is null.</exception>
       /// <exception cref="FormatException">The next input string not a long number.</exception>
       /// <exception cref="OverflowException">The next input string is a number larger than a long.</exception>
-      [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Naming", "CA1720:IdentifiersShouldNotContainTypeNames", Justification = "The return type must be specified in the method name")]
       public long ReadLong()
       {
          return long.Parse(this.ReadString(), this.locale);
@@ -430,7 +427,6 @@ namespace Stdlib
       /// <exception cref="ArgumentNullException">The next input string is null.</exception>
       /// <exception cref="FormatException">The next input string not a short number.</exception>
       /// <exception cref="OverflowException">The next input string is a number larger than a short.</exception>
-      [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Naming", "CA1720:IdentifiersShouldNotContainTypeNames", Justification = "The return type must be specified in the method name")]
       public short ReadShort()
       {
          return short.Parse(this.ReadString(), this.locale);
