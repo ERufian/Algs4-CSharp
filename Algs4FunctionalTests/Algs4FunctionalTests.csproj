@@ -75,20 +75,20 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <None Include="largeT.txt">
+    <None Include="Algs4-Data\largeT.txt">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
   </ItemGroup>
   <ItemGroup>
-    <None Include="largeW.txt">
+    <None Include="Algs4-Data\largeW.txt">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
   </ItemGroup>
   <ItemGroup>
-    <None Include="largeUF.txt">
+    <None Include="Algs4-Data\largeUF.txt">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
-    <None Include="mediumUF.txt">
+    <None Include="Algs4-Data\mediumUF.txt">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
   </ItemGroup>
