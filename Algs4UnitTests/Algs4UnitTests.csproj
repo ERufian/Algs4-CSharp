@@ -67,6 +67,9 @@
     <Compile Include="UFUnitTests.cs" />
     <Compile Include="InsertionXUnitTests.cs" />
     <Compile Include="ShellUnitTests.cs" />
+    <Compile Include="MergeUnitTests.cs" />
+    <Compile Include="MergeBUUnitTests.cs" />
+    <Compile Include="MergeXUnitTests.cs" />
     <Compile Include="WeightedQuickUnionUFUnitTests.cs" />
   </ItemGroup>
   <ItemGroup>

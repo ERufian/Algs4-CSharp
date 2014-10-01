@@ -27,28 +27,24 @@ namespace Algs4
       /// <returns>Index of key in array a[] if present, or -1 if not present.</returns>
       public static int Rank(int key, int[] arrayToSearch)
       {
-         if (null == arrayToSearch)
+         ArgumentValidator.CheckNotNull(arrayToSearch, "arrayToSearch");
+         int lowIndex = 0;
+         int highIndex = arrayToSearch.Length - 1;
+         while (lowIndex <= highIndex)
          {
-            throw new ArgumentNullException("arrayToSearch");
-         }
-
-         int lo = 0;
-         int hi = arrayToSearch.Length - 1;
-         while (lo <= hi)
-         {
-            // Key is in a[lo..hi] or not present.
-            int mid = lo + ((hi - lo) / 2);
-            if (key < arrayToSearch[mid])
+            // Key is in a[lowIndex..highIndex] or not present.
+            int midIndex = lowIndex + ((highIndex - lowIndex) / 2);
+            if (key < arrayToSearch[midIndex])
             {
-               hi = mid - 1;
+               highIndex = midIndex - 1;
             }
-            else if (key > arrayToSearch[mid])
+            else if (key > arrayToSearch[midIndex])
             {
-               lo = mid + 1;
+               lowIndex = midIndex + 1;
             }
             else
             {
-               return mid;
+               return midIndex;
             }
          }
 

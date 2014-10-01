@@ -24,7 +24,7 @@ namespace Algs4FunctionalTests
       public void QuickUnionUnionFindMedium()
       {
          IUnionFind unionFind = new UF();
-         CommonUFFunctionalTests.UnionFindCommon("MediumUF.txt", unionFind);
+         CommonUFFunctionalTests.UnionFindCommon("Algs4-Data\\MediumUF.txt", unionFind);
          Assert.AreEqual(3, unionFind.Count);
       }
 
@@ -37,7 +37,7 @@ namespace Algs4FunctionalTests
       public void QuickUnionUnionFindLarge()
       {
          IUnionFind unionFind = new UF();
-         CommonUFFunctionalTests.UnionFindCommon("LargeUF.txt", unionFind);
+         CommonUFFunctionalTests.UnionFindCommon("Algs4-Data\\LargeUF.txt", unionFind);
          Assert.AreEqual(6, unionFind.Count);
       }
    }

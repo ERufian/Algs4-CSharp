@@ -7,6 +7,7 @@
 namespace Algs4
 {
    using System;
+   using System.Collections.Generic;
 
    /// <summary>
    /// The <tt>ISortingAlgorithm</tt> interface specifies methods for sorting an
@@ -25,5 +26,16 @@ namespace Algs4
       /// This method provides the benefit of polymorphism and allows using interchangeable algorithms.
       /// </remarks>
       void Sort(IComparable[] sortableItems);
+
+      /// <summary>
+      /// Rearranges an array of items in ascending order, using a specified comparer.
+      /// </summary>
+      /// <typeparam name="T">The type of items in the array.</typeparam>
+      /// <param name="sortableItems">The array to be sorted.</param>
+      /// <param name="comparerMethod">The comparer to be used for sorting.</param>
+      /// <remarks>
+      /// This method provides the benefit of polymorphism and allows using interchangeable algorithms.
+      /// </remarks>
+      void Sort<T>(T[] sortableItems, IComparer<T> comparerMethod);
    }
 }

@@ -21,7 +21,7 @@ namespace Algs4UnitTests
       /// <param name="unionFind">The union find to be tested.</param>
       internal static void CommonUnionFindTiny(IUnionFind unionFind)
       {
-         using (In input = new In("TinyUF.txt"))
+         using (In input = new In("Algs4-Data\\TinyUF.txt"))
          {
             int initialComponentCount = input.ReadInt();
             unionFind.IsolateComponents(initialComponentCount);

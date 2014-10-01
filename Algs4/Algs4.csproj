@@ -44,11 +44,15 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ArgumentValidator.cs" />
     <Compile Include="BinarySearch.cs" />
     <Compile Include="GlobalSuppressions.cs" />
     <Compile Include="Insertion.cs" />
     <Compile Include="InsertionX.cs" />
     <Compile Include="ISortingAlgorithm.cs" />
+    <Compile Include="Merge.cs" />
+    <Compile Include="MergeBU.cs" />
+    <Compile Include="MergeX.cs" />
     <Compile Include="Selection.cs" />
     <Compile Include="Shell.cs" />
     <Compile Include="SortingCommon.cs" />
@@ -57,6 +61,7 @@
     <Compile Include="QuickFindUF.cs" />
     <Compile Include="QuickUnionUF.cs" />
     <Compile Include="UF.cs" />
+    <Compile Include="ValidatedNotNullAttribute.cs" />
     <Compile Include="WeightedQuickUnionUF.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

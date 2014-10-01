@@ -1,5 +1,5 @@
 ﻿//-----------------------------------------------------------------------
-// <copyright file="ShellUnitTests.cs" company="Eusebio Rufian-Zilbermann">
+// <copyright file="MergeUnitTests.cs" company="Eusebio Rufian-Zilbermann">
 //   Copyright (c) Eusebio Rufian-Zilbermann for the C# implementation
 //   based on materials published by Robert Sedgewick and Kevin Wayne
 // </copyright>
@@ -11,19 +11,19 @@ namespace Algs4UnitTests
    using Microsoft.VisualStudio.TestTools.UnitTesting;
 
    /// <summary>
-   /// Unit Tests for the Shell sort class.
+   /// Unit Tests for the Merge sort class.
    /// </summary>
    [TestClass]
-   public class ShellUnitTests
+   public class MergeUnitTests
    {
       /// <summary>
       /// Sort a small text file.
       /// </summary>
       [TestMethod]
-      public void ShellTiny()
+      public void MergeTiny()
       {
          string[] expectedResult = { "A", "E", "E", "L", "M", "O", "P", "R", "S", "T", "X" };
-         string[] actualResult = CommonSortUnitTests.SortCommon("Algs4-Data\\tiny.txt", Shell.Instance);
+         string[] actualResult = CommonSortUnitTests.SortCommon("Algs4-Data\\tiny.txt", Merge.Instance);
          for (int i = 0; actualResult.Length > i; i++)
          {
             Assert.AreEqual(expectedResult[i], actualResult[i]);
@@ -34,7 +34,7 @@ namespace Algs4UnitTests
       /// Sort a slightly larger text file.
       /// </summary>
       [TestMethod]
-      public void ShellWords3()
+      public void MergeWords3()
       {
          string[] expectedResult = 
          { 
@@ -43,7 +43,7 @@ namespace Algs4UnitTests
             "sob", "tag", "tap", "tar", "tip", "wad", "was", "wee", "yes", "yet", "zoo" 
          };
 
-         string[] actualResult = CommonSortUnitTests.SortCommon("Algs4-Data\\words3.txt", Shell.Instance);
+         string[] actualResult = CommonSortUnitTests.SortCommon("Algs4-Data\\words3.txt", Merge.Instance);
          for (int i = 0; actualResult.Length > i; i++)
          {
             Assert.AreEqual(expectedResult[i], actualResult[i]);

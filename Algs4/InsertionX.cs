@@ -19,6 +19,7 @@ namespace Algs4
    /// </summary>
    public class InsertionX : ISortingAlgorithm
    {
+      #region Singleton
       /// <summary>
       /// The single Instance of the InsertionX Sort Algorithm.
       /// </summary>
@@ -41,6 +42,7 @@ namespace Algs4
             return Singleton.Value; 
          }
       }
+      #endregion
 
       /// <summary>
       /// Rearranges an array of items in ascending order, using the natural order.
@@ -48,11 +50,7 @@ namespace Algs4
       /// <param name="sortableItems">The array to be sorted.</param>
       public static void Sort(System.IComparable[] sortableItems)
       {
-         if (null == sortableItems)
-         {
-            throw new ArgumentNullException("sortableItems");
-         }
-
+         ArgumentValidator.CheckNotNull(sortableItems, "sortableItems");
          int itemCount = sortableItems.Length;
 
          // put smallest element in position to serve as sentinel
@@ -89,11 +87,7 @@ namespace Algs4
       /// <param name="comparerMethod">The comparer to be used for sorting.</param>
       public static void Sort<T>(T[] sortableItems, IComparer<T> comparerMethod)
       {
-         if (null == sortableItems)
-         {
-            throw new ArgumentNullException("sortableItems");
-         }
-
+         ArgumentValidator.CheckNotNull(sortableItems, "sortableItems");
          int itemCount = sortableItems.Length;
 
          // put smallest element in position to serve as sentinel
@@ -130,6 +124,18 @@ namespace Algs4
       void ISortingAlgorithm.Sort(IComparable[] sortableItems)
       {
          InsertionX.Sort(sortableItems);
+      }
+
+      /// <summary>
+      /// Rearranges an array of items in ascending order, using a specified comparer.
+      /// </summary>
+      /// <typeparam name="T">The type of items in the array.</typeparam>
+      /// <param name="sortableItems">The array to be sorted.</param>
+      /// <param name="comparerMethod">The comparer to be used for sorting.</param>
+      /// <remarks>Unlike the static version, the instance version allows polymorphism.</remarks>
+      void ISortingAlgorithm.Sort<T>(T[] sortableItems, IComparer<T> comparerMethod)
+      {
+         InsertionX.Sort(sortableItems, comparerMethod);
       }
    }
 }

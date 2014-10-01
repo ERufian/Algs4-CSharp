@@ -22,16 +22,8 @@ namespace Algs4
       /// <returns>True if v is less than w, false otherwise.</returns>
       public static bool Less(IComparable itemV, IComparable itemW)
       {
-         if (null == itemV)
-         {
-            throw new ArgumentNullException("itemV");
-         }
-
-         if (null == itemW)
-         {
-            throw new ArgumentNullException("itemW");
-         }
-         
+         ArgumentValidator.CheckNotNull(itemV, "itemV");
+         ArgumentValidator.CheckNotNull(itemW, "itemW");
          return 0 > itemV.CompareTo(itemW);
       }
 
@@ -45,11 +37,7 @@ namespace Algs4
       /// <returns>True if v is less than w, false otherwise.</returns>
       public static bool Less<T>(IComparer<T> comparerMethod, T itemV, T itemW)
       {
-         if (null == comparerMethod)
-         {
-            throw new ArgumentNullException("comparerMethod");
-         }
-
+         ArgumentValidator.CheckNotNull(comparerMethod, "comparerMethod");
          return 0 > comparerMethod.Compare(itemV, itemW);
       }
 
@@ -62,10 +50,7 @@ namespace Algs4
       /// <param name="indexJ">The index of the second item to exchange.</param>
       public static void Exch<T>(T[] items, int indexI, int indexJ)
       {
-         if (null == items)
-         {
-            throw new ArgumentNullException("items");
-         }
+         ArgumentValidator.CheckNotNull(items, "items");
 
          T swap = items[indexI];
          items[indexI] = items[indexJ];
@@ -80,11 +65,7 @@ namespace Algs4
       /// <remarks>Useful for debugging.</remarks>
       public static bool IsSorted(IComparable[] sortableItems)
       {
-         if (null == sortableItems)
-         {
-            throw new ArgumentNullException("sortableItems");
-         }
-
+         ArgumentValidator.CheckNotNull(sortableItems, "sortableItems");
          return IsSorted(sortableItems, 0, sortableItems.Length - 1);
       }
 
@@ -97,10 +78,7 @@ namespace Algs4
       /// <returns>True if the subset is sorted, false otherwise.</returns>
       public static bool IsSorted(IComparable[] sortableItems, int lowIndex, int highIndex)
       {
-         if (null == sortableItems)
-         {
-            throw new ArgumentNullException("sortableItems");
-         }
+         ArgumentValidator.CheckNotNull(sortableItems, "sortableItems");
 
          if (int.MaxValue == lowIndex)
          {
@@ -127,10 +105,7 @@ namespace Algs4
       /// <returns>True if the array is sorted, false otherwise.</returns>
       public static bool IsSorted<T>(T[] sortableItems, IComparer<T> comparerMethod)
       {
-         if (null == sortableItems)
-         {
-            throw new ArgumentNullException("sortableItems");
-         }
+         ArgumentValidator.CheckNotNull(sortableItems, "sortableItems");
 
          return IsSorted(sortableItems, comparerMethod, 0, sortableItems.Length - 1);
       }
@@ -146,11 +121,7 @@ namespace Algs4
       /// <returns>True if the subset is sorted, false otherwise.</returns>
       public static bool IsSorted<T>(T[] sortableItems, IComparer<T> comparerMethod, int lowIndex, int highIndex)
       {
-         if (null == sortableItems)
-         {
-            throw new ArgumentNullException("sortableItems");
-         }
-
+         ArgumentValidator.CheckNotNull(sortableItems, "sortableItems");
          if (int.MaxValue == lowIndex)
          {
             throw new ArgumentOutOfRangeException("lowIndex");

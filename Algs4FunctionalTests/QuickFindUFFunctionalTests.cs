@@ -24,7 +24,7 @@ namespace Algs4FunctionalTests
       public void QuickFindUnionFindMedium()
       {
          IUnionFind unionFind = new QuickFindUF();
-         CommonUFFunctionalTests.UnionFindCommon("MediumUF.txt", unionFind);
+         CommonUFFunctionalTests.UnionFindCommon("Algs4-Data\\MediumUF.txt", unionFind);
          Assert.AreEqual(3, unionFind.Count);
       }
       

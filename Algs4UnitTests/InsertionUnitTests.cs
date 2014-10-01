@@ -23,7 +23,7 @@ namespace Algs4UnitTests
       public void InsertionTiny()
       {
          string[] expectedResult = { "A", "E", "E", "L", "M", "O", "P", "R", "S", "T", "X" };
-         string[] actualResult = CommonSortUnitTests.SortCommon("tiny.txt", Insertion.Instance);
+         string[] actualResult = CommonSortUnitTests.SortCommon("Algs4-Data\\tiny.txt", Insertion.Instance);
          for (int i = 0; actualResult.Length > i; i++)
          {
             Assert.AreEqual(expectedResult[i], actualResult[i]);
@@ -43,7 +43,7 @@ namespace Algs4UnitTests
             "sob", "tag", "tap", "tar", "tip", "wad", "was", "wee", "yes", "yet", "zoo" 
          };
 
-         string[] actualResult = CommonSortUnitTests.SortCommon("words3.txt", Insertion.Instance);
+         string[] actualResult = CommonSortUnitTests.SortCommon("Algs4-Data\\words3.txt", Insertion.Instance);
          for (int i = 0; actualResult.Length > i; i++)
          {
             Assert.AreEqual(expectedResult[i], actualResult[i]);

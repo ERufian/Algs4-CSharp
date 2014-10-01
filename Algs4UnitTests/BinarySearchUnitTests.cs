@@ -28,7 +28,7 @@ namespace Algs4UnitTests
          int[] whiteList;
 
          // read the integers from a file and sort them
-         using (In inWhiteList = new In("TinyW.txt"))
+         using (In inWhiteList = new In("Algs4-Data\\TinyW.txt"))
          {
             whiteList = inWhiteList.ReadAllInts();
          }
@@ -36,7 +36,7 @@ namespace Algs4UnitTests
          Array.Sort(whiteList);
 
          // read integer keys from a file; search in whitelist
-         using (In inKeys = new In("TinyT.txt"))
+         using (In inKeys = new In("Algs4-Data\\TinyT.txt"))
          {
             int expectedIndex = 0;
             while (!inKeys.IsEmpty())
