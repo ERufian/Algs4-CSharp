@@ -53,6 +53,9 @@
     <Compile Include="Merge.cs" />
     <Compile Include="MergeBU.cs" />
     <Compile Include="MergeX.cs" />
+    <Compile Include="Quick.cs" />
+    <Compile Include="Quick3Way.cs" />
+    <Compile Include="QuickX.cs" />
     <Compile Include="Selection.cs" />
     <Compile Include="Shell.cs" />
     <Compile Include="SortingCommon.cs" />
@@ -63,6 +66,12 @@
     <Compile Include="UF.cs" />
     <Compile Include="ValidatedNotNullAttribute.cs" />
     <Compile Include="WeightedQuickUnionUF.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\stdlib\Stdlib.csproj">
+      <Project>{9ffd0c6b-936d-46f9-941e-e688c99a647f}</Project>
+      <Name>Stdlib</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
