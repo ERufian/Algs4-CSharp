@@ -30,7 +30,10 @@
 
       </header>
       <section>
-        <p>The book <em>Algorithms 4th Edition</em> contains Java implementations for many fundamental algorithms "<em>the 50 algorithms that every programmer should know</em>". The authors created a website, <a href="http://algs4.cs.princeton.edu/code/">http://algs4.cs.princeton.edu/code/</a> where all the code for the book is published as a class library <em>algs4</em> (including additional code that was omitted from the book itself for brevity reasons). </p>
+        <h1>
+<a name="algs4-c" class="anchor" href="#algs4-c"><span class="octicon octicon-link"></span></a>Algs4-C</h1>
+
+<p>The book <em>Algorithms 4th Edition</em> contains Java implementations for many fundamental algorithms "<em>the 50 algorithms that every programmer should know</em>". The authors created a website, <a href="http://algs4.cs.princeton.edu/code/">http://algs4.cs.princeton.edu/code/</a> where all the code for the book is published as a class library <em>algs4</em> (including additional code that was omitted from the book itself for brevity reasons). </p>
 
 <p>Personally I prefer using C# so I have decided to re-implement algs4 in C# (some reasons I like C# is because it has been evolving from an original "very Java-like" object oriented language into a very flexible multi-paradigm language, and also because I like the tools in Visual Studio better than the equivalent tools for Java)</p>
 
@@ -40,13 +43,48 @@
 
 <p>Sedgewick &amp; Wayne also wrote the book <em>Introduction to Programming in Java</em> and an associated class library <em>stdlib</em> that they use in the algs4 code. I will re-implement some portions of stdlib as I need but I do not expect it to be complete, and my target quality level for stdlib is that it is "good enough" (e.g., for I/O functions I will not try to make it solid to deal with the many types of failure that can happen)</p>
 
-<p>In terms of licensing, the original algs4 is released as GPLv3. In the Q&amp;A section of the original code it says:</p>
+<h2>
+<a name="implemented-functionality" class="anchor" href="#implemented-functionality"><span class="octicon octicon-link"></span></a>Implemented functionality</h2>
+
+<h3>
+<a name="algs4" class="anchor" href="#algs4"><span class="octicon octicon-link"></span></a>Algs4</h3>
+
+<ul>
+<li>    Binary search</li>
+<li>    Quick find Union-Find</li>
+<li>    Quick union Union-Find</li>
+<li>    Weighted quick union Union-Find</li>
+<li>    Weighted quick-union by rank with path compression Union-Find</li>
+<li>    Insertion sort</li>
+<li>    Optimized insertion sort with half exchanges and a sentinel</li>
+<li>    Selection sort</li>
+<li>    Shellsort</li>
+<li>    Top-down mergesort</li>
+<li>    Bottom-up mergesort</li>
+<li>    Optimized mergesort with cutoff to insertion sort</li>
+<li>    Quicksort</li>
+<li>    Quicksort with 3-way partitioning</li>
+<li>    Optimized quicksort using Bentley-McIlroy 3-way partitioning, Tukey's ninther, and cutoff to insertion sort</li>
+</ul><h3>
+<a name="stdlib" class="anchor" href="#stdlib"><span class="octicon octicon-link"></span></a>Stdlib:</h3>
+
+<ul>
+<li>    Input from files and urls</li>
+<li>    Random distributions: Bernoulli, Uniform, Gaussian, Discrete, and Exponential</li>
+<li>    Shuffling</li>
+</ul><h2>
+<a name="licensing" class="anchor" href="#licensing"><span class="octicon octicon-link"></span></a>Licensing</h2>
+
+<p>The original algs4 is released as GPLv3. In the Q&amp;A section of the original code it says:</p>
 
 <blockquote>
 <p>Our libraries stdlib.jar and algs4.jar are released under the GNU General Public License, version 3 (GPLv3). If you wish to license the code under different terms, please contact our publisher to discuss. </p>
 </blockquote>
 
 <p>My re-implementation is also released under the same terms. Personally I would have chosen a less restrictive licensing. If you can get the original owners of algs4 to agree to different terms, please let me know and I'll release my re-implementation with a less restrictive license</p>
+
+<h2>
+<a name="contact-information" class="anchor" href="#contact-information"><span class="octicon octicon-link"></span></a>Contact Information</h2>
 
 <p>If you'd like to contact me regarding this code, please email algs4 (hyphen) csharp (dot) nospam (at) rufian (dot) zilbermann (dot) org</p>
       </section>
