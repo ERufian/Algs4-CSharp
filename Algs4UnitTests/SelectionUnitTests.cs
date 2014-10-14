@@ -24,7 +24,7 @@ namespace Algs4UnitTests
       {
          string[] expectedResult = { "A", "E", "E", "L", "M", "O", "P", "R", "S", "T", "X" };
          string[] actualResult = CommonSortUnitTests.SortCommon("Algs4-Data\\tiny.txt", Selection.Instance);
-         for (int i = 0; actualResult.Length > i; i++)
+         for (int i = 0; actualResult.Length > i && expectedResult.Length > i; i++)
          {
             Assert.AreEqual(expectedResult[i], actualResult[i]);
          }
@@ -44,7 +44,7 @@ namespace Algs4UnitTests
          };
 
          string[] actualResult = CommonSortUnitTests.SortCommon("Algs4-Data\\words3.txt", Selection.Instance);
-         for (int i = 0; actualResult.Length > i; i++)
+         for (int i = 0; actualResult.Length > i && expectedResult.Length > i; i++)
          {
             Assert.AreEqual(expectedResult[i], actualResult[i]);
          }

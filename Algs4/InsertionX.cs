@@ -67,7 +67,7 @@ namespace Algs4
          {
             IComparable itemV = sortableItems[i];
             int j = i;
-            while (SortingCommon.Less(itemV, sortableItems[j - 1]))
+            while (j > 0 && SortingCommon.Less(itemV, sortableItems[j - 1]))
             {
                sortableItems[j] = sortableItems[j - 1];
                j--;
@@ -104,7 +104,7 @@ namespace Algs4
          {
             T itemV = sortableItems[i];
             int j = i;
-            while (SortingCommon.Less(comparerMethod, itemV, sortableItems[j - 1]))
+            while (0 < j && SortingCommon.Less(comparerMethod, itemV, sortableItems[j - 1]))
             {
                sortableItems[j] = sortableItems[j - 1];
                j--;

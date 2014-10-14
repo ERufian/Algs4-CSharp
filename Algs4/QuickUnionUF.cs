@@ -92,22 +92,23 @@ namespace Algs4
       /// </summary>
       /// <param name="site">The site to find.</param>
       /// <returns>The component containing the site to find.</returns>
-      /// <exception cref="IndexOutOfRangeException">
-      /// This exception is thrown if the site index is greater than the number of components
-      /// </exception>
       /// <exception cref="ArgumentException">
-      /// This exception is thrown if the site index is negative.
+      /// This exception is thrown if the site index is negative or greater than the number of components.
       /// </exception>
       public int Find(int site)
       {
-         if (0 > site)
+         if (0 > site || this.componentIdentifier.Length < site)
          {
-            throw new ArgumentException("Site Index should not be negative", "site");
+            throw new ArgumentException("Site out of range.", "site");
          }
 
          while (site != this.componentIdentifier[site])
          {
-            site = this.componentIdentifier[site];
+            site = this.componentIdentifier[site];            
+            if (0 > site || this.componentIdentifier.Length < site)
+            {
+               throw new ArgumentException("Site out of range.", "site");
+            }
          }
 
          return site;

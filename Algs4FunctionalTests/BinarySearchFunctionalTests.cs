@@ -26,6 +26,7 @@ namespace Algs4FunctionalTests
       /// </remarks>
       [TestCategory("Functional")]
       [TestMethod]
+      [Ignore]
       public void BinarySearchLarge()
       {
          int[] expectedNotFound = { 499569, 984875, 295754, 207807, 140925, 161828 };

@@ -39,7 +39,7 @@ namespace Algs4UnitTests
          using (In inKeys = new In("Algs4-Data\\TinyT.txt"))
          {
             int expectedIndex = 0;
-            while (!inKeys.IsEmpty())
+            while (!inKeys.IsEmpty() && expected.Length > expectedIndex)
             {
                int key = inKeys.ReadInt();
                int position = BinarySearch.Rank(key, whiteList);

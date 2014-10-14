@@ -1,7 +1,6 @@
 ﻿//-----------------------------------------------------------------------
 // <copyright file="ISortingAlgorithm.cs" company="Eusebio Rufian-Zilbermann">
-//   Copyright (c) Eusebio Rufian-Zilbermann for the C# implementation
-//   based on algorithms published by Robert Sedgewick and Kevin Wayne
+//   Copyright (c) Eusebio Rufian-Zilbermann
 // </copyright>
 //-----------------------------------------------------------------------
 namespace Algs4

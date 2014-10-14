@@ -10,7 +10,7 @@ namespace StdlibUnitTests
    using Stdlib;
 
    /// <summary>
-   /// Unit Tests for the StdRandom class.
+   /// Unit Tests for the <code>StdRandom</code> class.
    /// </summary>
    [TestClass]
    public class StdRandomUnitTests
@@ -153,8 +153,11 @@ namespace StdlibUnitTests
       /// <summary>
       /// Calculate a sequence of pseudo-random numbers in different distributions.
       /// </summary>
+      /// <remarks>
+      /// This is meant to be run in the debugger for calculating 
+      /// the expected results for a given seed, it is not really a Unit Test.
+      /// </remarks>
       [TestMethod]
-      [Ignore]
       public void CalculatePseudorandom()
       {
          StdRandom.DisableCryptoStrength = false;

@@ -112,9 +112,9 @@ namespace Algs4
       /// </exception>
       public int Find(int site)
       {
-         if (0 > site)
+         if (0 > site || this.parentIdentifier.Length < site)
          {
-            throw new ArgumentException("Site Index should not be negative", "site");
+            throw new ArgumentException("Site out of range.", "site");
          }
 
          while (site != this.parentIdentifier[site])
@@ -122,6 +122,10 @@ namespace Algs4
             // path compression by halving
             this.parentIdentifier[site] = this.parentIdentifier[this.parentIdentifier[site]];
             site = this.parentIdentifier[site];
+            if (0 > site || this.parentIdentifier.Length < site)
+            {
+               throw new ArgumentException("Site out of range.", "site");
+            }
          }
 
          return site;

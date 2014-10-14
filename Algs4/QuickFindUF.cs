@@ -95,7 +95,7 @@ namespace Algs4
       /// This exception is thrown if the site index is greater than the number of components
       /// </exception>
       /// <exception cref="ArgumentException">
-      /// This exception is thrown if the site index is negative.
+      /// This exception is thrown if the site index is negative or greater than the number of components.
       /// </exception>
       /// <exception cref="InvalidOperationException">
       /// This exception is thrown when the union-find is not yet fully constructed 
@@ -103,14 +103,14 @@ namespace Algs4
       /// </exception>
       public int Find(int site)
       {
-         if (0 > site)
-         {
-            throw new ArgumentException("Site Index should not be negative", "site");
-         }
-
          if (null == this.componentIdentifier)
          {
             throw new InvalidOperationException("Components must be initialized before using this method.");
+         }
+
+         if (0 > site || this.componentIdentifier.Length < site)
+         {
+            throw new ArgumentException("Site out of range.", "site");
          }
 
          return this.componentIdentifier[site];

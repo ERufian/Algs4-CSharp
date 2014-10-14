@@ -51,6 +51,10 @@ namespace Algs4
       public static void Exch<T>(T[] items, int indexI, int indexJ)
       {
          ArgumentValidator.CheckNotNull(items, "items");
+         if (items.Length <= indexI || items.Length <= indexJ)
+         {
+            throw new ArgumentException("The specified Index is outside the specified array.");
+         }
 
          T swap = items[indexI];
          items[indexI] = items[indexJ];
@@ -80,9 +84,14 @@ namespace Algs4
       {
          ArgumentValidator.CheckNotNull(sortableItems, "sortableItems");
 
-         if (int.MaxValue == lowIndex)
+         if (int.MaxValue == lowIndex || 0 > lowIndex || sortableItems.Length <= lowIndex)
          {
             throw new ArgumentOutOfRangeException("lowIndex");
+         }
+
+         if (0 > highIndex || sortableItems.Length <= highIndex)
+         {
+            throw new ArgumentOutOfRangeException("highIndex");
          }
 
          for (int i = lowIndex + 1; i <= highIndex; i++)
