@@ -21,6 +21,8 @@ Algs4
 * Quicksort
 * Quicksort with 3-way partitioning
 * Optimized quicksort using Bentley-McIlroy 3-way partitioning, Tukey's ninther, and cutoff to insertion sort
+* Max and Min Priority Queues (Heap based, generic keys, ICollection<>)
+* Max and Min Index Priority Queues (Heap based, generic priorities, IDictionary<>)
 
 Stdlib:
 -------
