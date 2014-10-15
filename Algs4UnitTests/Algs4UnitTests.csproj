@@ -122,6 +122,7 @@
     <Compile Include="MinPQUnitTests.cs" />
     <Compile Include="IndexMinPQUnitTests.cs" />
     <Compile Include="IndexMaxPQUnitTests.cs" />
+    <Compile Include="HeapUnitTests.cs" />
     <Compile Include="WeightedQuickUnionUFUnitTests.cs" />
   </ItemGroup>
   <ItemGroup>

@@ -91,6 +91,7 @@
     <Compile Include="ArgumentValidator.cs" />
     <Compile Include="BinarySearch.cs" />
     <Compile Include="GlobalSuppressions.cs" />
+    <Compile Include="Heap.cs" />
     <Compile Include="IndexMaxPQ.cs" />
     <Compile Include="IndexMinPQ.cs" />
     <Compile Include="IndexPQDictionary.cs" />
